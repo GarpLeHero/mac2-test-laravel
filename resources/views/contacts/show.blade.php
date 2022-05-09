@@ -1,7 +1,7 @@
 @extends('layouts.master')
- 
-@section('title', 'Csontact')
- 
+
+@section('title', 'Contact')
+
 @section('content')
 <div class="col-md-12">
     <div class="p-6">
@@ -13,108 +13,108 @@
                 <div class="table-responsive">
                 <table class="table table-user-information">
                     <tbody>
-                        <tr>        
+                        <tr>
                             <td>
                                 <strong>
                                     <span class="glyphicon glyphicon-asterisk text-primary"></span>
-                                    ID                                                
+                                    ID
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->id}}     
+                                {{$contact->id}}
                             </td>
                         </tr>
-                        <tr>    
+                        <tr>
                             <td>
                                 <strong>
-                                    <span class="glyphicon glyphicon-user  text-primary"></span>    
-                                    Nom                                                
+                                    <span class="glyphicon glyphicon-user  text-primary"></span>
+                                    Nom
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->nom}}     
+                                {{$contact->nom}}
                             </td>
                         </tr>
-                        <tr>        
+                        <tr>
                             <td>
                                 <strong>
-                                    <span class="glyphicon glyphicon-cloud text-primary"></span>  
-                                    Prénoms                                                
+                                    <span class="glyphicon glyphicon-cloud text-primary"></span>
+                                    Prénoms
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->nom}}   
+                                {{$contact->nom}}
                             </td>
                         </tr>
-    
-                        <tr>        
+
+                        <tr>
                             <td>
                                 <strong>
-                                    <span class="glyphicon glyphicon-bookmark text-primary"></span> 
-                                    email                                                
+                                    <span class="glyphicon glyphicon-bookmark text-primary"></span>
+                                    email
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->email}}  
+                                {{$contact->email}}
                             </td>
                         </tr>
-    
-    
-                        <tr>        
+
+
+                        <tr>
                             <td>
                                 <strong>
-                                    <span class="glyphicon glyphicon-eye-open text-primary"></span> 
-                                    Téléphone                                                
+                                    <span class="glyphicon glyphicon-eye-open text-primary"></span>
+                                    Téléphone
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->tel}} 
+                                {{$contact->tel}}
                             </td>
                         </tr>
-                        <tr>        
+                        <tr>
                             <td>
                                 <strong>
-                                    <span class="glyphicon glyphicon-envelope text-primary"></span> 
-                                    Adresse                                                
+                                    <span class="glyphicon glyphicon-envelope text-primary"></span>
+                                    Adresse
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->adresse}}  
+                                {{$contact->adresse}}
                             </td>
                         </tr>
-                        <tr>        
+                        <tr>
                             <td>
                                 <strong>
                                     <span class="glyphicon glyphicon-calendar text-primary"></span>
-                                    Code Postal                                                
+                                    Code Postal
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->code_postal}} 
+                                {{$contact->code_postal}}
                             </td>
                         </tr>
-                        <tr>        
+                        <tr>
                             <td>
                                 <strong>
                                     <span class="glyphicon glyphicon-calendar text-primary"></span>
-                                    Ville                                                
+                                    Ville
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {{$contact->ville}} 
+                                {{$contact->ville}}
                             </td>
-                        </tr> 
-                        <tr>        
+                        </tr>
+                        <tr>
                             <td>
                                 <strong>
                                     <span class="glyphicon glyphicon-calendar text-primary"></span>
-                                    Commentaire                                                
+                                    Commentaire
                                 </strong>
                             </td>
                             <td class="text-primary">
-                                {!! nl2br($contact->commentaire) !!} 
+                                {!! nl2br($contact->commentaire) !!}
                             </td>
-                        </tr>                                     
+                        </tr>
                     </tbody>
                 </table>
                 </div>

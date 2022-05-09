@@ -1,10 +1,10 @@
 @extends('layouts.master')
- 
+
 @section('title', 'Tous les contacts')
- 
+
 @section('content')
 <div class="grid ">
-    
+
     <div class="p-12 ">
         <div class="col-md-12">
 		   <table class="table table-striped">
@@ -54,7 +54,7 @@
 						</a>
 						&nbsp;
 						<form method="POST"
-							 style="display:inline;" 
+							 style="display:inline;"
 							 onSubmit="return confirm('Voulez vous vraiment supprimer	?') "
 							 action="{{ route('contacts.destroy', $contact) }}" >
 							@csrf
